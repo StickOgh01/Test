@@ -1,26 +1,35 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/LypherX/FTagSource/main/MoriScripts')))()
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+local OrionLib = loadstring(game:HttpGet((tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('jlkFUFcujzcgViSZkweOQRFCIbkayYwCcxPpdglYGUYHNvNfxreGwFlaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0x5cGhlclgvRlRhZ1NvdXJjZS9tYWluL01vcmlTY3JpcHRz'))))()
 -- IMPORTANT LOCAL
-local PartnerRank = "🔥Partner"
-local DeveloperRank = "⚒️Developer"
-local ModeratorRank = "🔧Moderator"
-local LeaderboardRank = "🌍#82"
-local SignerRank = "✏️Signer"
-local Wow = "OMG REAL HE SIGN MY HUGES!                                                                                                                                     "
+local PartnerRank = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('RgmaRhfGUpeoccRZgRkjjvEoEzORFPqMmLlYHbvAFfXelAFYCVssiGc8J+UpVBhcnRuZXI=')
+local DeveloperRank = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('gSvSJKHqLASsgcuzPQhLAjWzNLldSBFOcgwSvvQjxJawSGNCrFOFAGv4pqS77iPRGV2ZWxvcGVy')
+local ModeratorRank = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('RpyMpHibKVmfvNhFvepHDPGgVOxvrbRWKirnZSPnvLkhAYHtCQIatdn8J+Up01vZGVyYXRvcg==')
+local LeaderboardRank = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('NgZGdXElgOnygszlNMxitYBoypMAYnJYvtLiQbFdXjAblehUbAWZheo8J+MjSM4Mg==')
+local SignerRank = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('fpOuowyUBABTRYISYPhgmmcHCgxOSuDSbRHNNesxvYBSumaovtbHNuB4pyP77iPU2lnbmVy')
+local Wow = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('btzFKfyDwmMYPcwiRJBRCAsfAlslpelINXQIbKEIczXSTdusnghiRwST01HIFJFQUwgSEUgU0lHTiBNWSBIVUdFUyEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg')
 local speed = (game.Players.LocalPlayer.Character.Humanoid.WalkSpeed)
 local jump = (game.Players.LocalPlayer.Character.Humanoid.JumpPower)
 Username = game.Players.LocalPlayer.DisplayName
 SpamTime = 10
 -- SCRIPT
-local Window = OrionLib:MakeWindow({Name = "FuegoEterno Fake Tag", HidePremium = false, SaveConfig = true, ConfigFolder = "FuegoEterno Scripts"})
+local Window = OrionLib:MakeWindow({Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('fXDaheydtWKSPXwJIVSdStImnvRmuHTAxxmldVhclNmrpMCEqmraeqLRnVlZ29FdGVybm8gRmFrZSBUYWc='), HidePremium = false, SaveConfig = true, ConfigFolder = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('BSnOwRIsRdZRSEKNkUeiWdXksAWOoPKoShqBNAgdeZwXgHmjbQztyCDRnVlZ29FdGVybm8gU2NyaXB0cw==')})
 
 local Tab = Window:MakeTab({
-	Name = "Misc Scripts",
-	Icon = "rbxassetid://4483345998",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('VKRWHcxJCPcdmtbmoGltQwYEsqSfnnjYmglEXyvtaNTZvPODXwQeesiTWlzYyBTY3JpcHRz'),
+	Icon = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('MpWOUyvmYrsAeqIDyPYESIhFOnuinpdZmmrTFDSzHOsybbcgWOvDwsOcmJ4YXNzZXRpZDovLzQ0ODMzNDU5OTg='),
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "Anti Lag",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('fqtOsibtHTnxLEwMqWsHDCExLFbIgwKbokFvogWhXZlLPWdQydGKPwWQW50aSBMYWc='),
 	Callback = function()
       		local lighting = game.Lighting
 local terrain = game.Workspace.Terrain
@@ -32,27 +41,27 @@ lighting.GlobalShadows = false
 lighting.FogStart = 0
 lighting.FogEnd = 0
 lighting.Brightness = 0
-settings().Rendering.QualityLevel = "Level01"
+settings().Rendering.QualityLevel = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('zgGyCjBxofLLJbRRTltTHBltysFuFvQeWIxRiIISCVOvroljzQCWZorTGV2ZWwwMQ==')
 
 for i, v in pairs(game:GetDescendants()) do
-    if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
-        v.Material = "Plastic"
+    if v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('iyzBkKMHfpHsmjeBAYguFdJphJNwZJZpuaHKERLWRwIzOiOokQqLTbhUGFydA==')) or v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('cOfZpEJvKuFPXCRrPqqADYIOakDYvozOvIprEVouPSLwstmVgywZUGXVW5pb24=')) or v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('WoQsqIGzopKpSyoiCNlhHzpykHmdqWOmHCUNPPALfReikGWeuRjyctsQ29ybmVyV2VkZ2VQYXJ0')) or v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('ZUTgHJzEDQLpllxZpajUEvMFMtWLIQZVktetGinhdbxuHGkqWOAhXASVHJ1c3NQYXJ0')) then
+        v.Material = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('zTqCnPRffXUKpXaOAoucOAdzDDmfISmrsSZOfsJbXpgSfETVQPmEfSvUGxhc3RpYw==')
         v.Reflectance = 0
-    elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+    elseif v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('uUtRgXTWfMQYJpnKshseQooJjwgJbwrCrdbrDmhmAremskoRtbaylgTUGFydGljbGVFbWl0dGVy')) or v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('CzecRnijniQymzLiOMonBANuzLaHRollfmVLmzmhWiSQlJejlkEIGjEVHJhaWw=')) then
         v.Lifetime = NumberRange.new(0)
-    elseif v:IsA("Explosion") then
+    elseif v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('eBnOlxPsLGQNuIDJKYIXkivgHIiqgseEmVuktHtuAZVZUntFefpPApbRXhwbG9zaW9u')) then
         v.BlastPressure = 1
         v.BlastRadius = 1
-    elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+    elseif v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('YmJwtCVcxrjNgyUQVJsqOYGsyDuwEdPcjoGNVXBaeSDkrSupEbYkiKoRmlyZQ==')) or v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('SVxAiiKAWbOyjBUaFOWJQojwKaIbqYiKTAjLiQwqCLEDUpxRkhwwqtDU3BvdExpZ2h0')) or v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('lZEYcFWgdLUAeIoPOPJQbPdhRnSHVTrRlLMQSMjjVfYepiDZDWtvqxdU21va2U=')) or v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('wKRtVvTmPujVAlStFKadHZmOYkfyXcGCkUMuIaUtZSHXeViRpdIuLFYU3BhcmtsZXM=')) then
         v.Enabled = false
-    elseif v:IsA("MeshPart") then
-        v.Material = "Plastic"
+    elseif v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('hAQWsCQtiELqaPGuCXYWekJAQfvzSDbODfhrAnkHlcUIZVibznEALqpTWVzaFBhcnQ=')) then
+        v.Material = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('sOVCFuICrfvgECAOXmJhzfgOouNMXGtIqdPSrspZyYMewgguMPyLgjkUGxhc3RpYw==')
         v.Reflectance = 0
     end
 end
 
 for i, e in pairs(lighting:GetChildren()) do
-    if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+    if e:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('hJmufSDQjQGXIXsyiLOWQPnsDPHmdNGSTCDfhUWQKHtCNuUzTCMaXfxQmx1ckVmZmVjdA==')) or e:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('yiMGFYfshDlNNIWNChjAXYNgDrlTzhVSPiVJvgsmbjLDqUXtFpjohclU3VuUmF5c0VmZmVjdA==')) or e:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('KXGUDahxYDZYgiOaCUZIEeAXmfISvUXSBQxTaMRSWpDJrEYVZxCxbwKQ29sb3JDb3JyZWN0aW9uRWZmZWN0')) or e:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('exKThlKiNDCXsbKHataCMdaINxapCKruRPAXwmSzUdDWAPdzZOcuvgIQmxvb21FZmZlY3Q=')) or e:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('wbymKscOvBQRnbLTBZqtDcmrDEzQogWThPcCVyjxYHzFsSRRtTPDBRmRGVwdGhPZkZpZWxkRWZmZWN0')) then
         e.Enabled = false
     end
 end
@@ -60,12 +69,12 @@ end
 })
 
 Tab:AddButton({
-	Name = "Visual Hoverboards",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('zRAjuaJDNVBMnzBzwrlVIlJaCFLWoZERtnmEyQKFDNaFTGwAWfEhSmbVmlzdWFsIEhvdmVyYm9hcmRz'),
 	Callback = function()
-local sex1 = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
+local sex1 = require(game:GetService(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('KoHbAyksUtajtjCbLLYmYUNejZRPMdFumpkStEbTxYiMrUXxAWnlmacUmVwbGljYXRlZFN0b3JhZ2U=')).Library.Client.Save).Get()
   sex1.Hoverboards = {}
-for i,v in pairs(game:GetService("ReplicatedStorage")["__DIRECTORY"].Hoverboards:GetChildren())do
-    if v:IsA("Folder") then
+for i,v in pairs(game:GetService(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('bFxcLeCjHINuIoOUjbNLTdIcDgxnBSNBJIHuTYhSBvJUSumHGhyPhBaUmVwbGljYXRlZFN0b3JhZ2U='))[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('LslNiVdGiRpXoFXvHYUyBYHBTKLqxLfLWGWycZDcKbGvhoAFiPqQWkYX19ESVJFQ1RPUlk=')].Hoverboards:GetChildren())do
+    if v:IsA(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('DprNpeTgbPFLivDkIvDLFmRSTzansLXzUdSJsQswcojoieSEsUGikLSRm9sZGVy')) then
      table.insert(sex1.Hoverboards, v.Name)
     end
 end
@@ -78,61 +87,61 @@ end
 })
 
 Tab:AddSlider({
-	Name = "Slider",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('NECHrFDSKRZjcwZyYRZiGzTrJdwAgXlmgVxEZbNyhUOMbPyqUPVIiOlU2xpZGVy'),
 	Min = 1,
 	Max = 250,
 	Default = 24,
 	Color = Color3.fromRGB(10, 24, 36),
 	Increment = 1,
-	ValueName = "speed",
+	ValueName = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('fnHMadLKShQHUDaChyUKoVQgDtFesvtmzadrJDaUMKDhvrKRulHyMpFc3BlZWQ='),
 	Callback = function(Value)
        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
 	end    
 })
 
 Tab:AddSlider({
-	Name = "Slider",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('lyNpZCMmxMqtgSTLAxfWzctaJbHdEhKRUDbseMTyMgUJwtECePZYbbJU2xpZGVy'),
 	Min = 1,
 	Max = 250,
 	Default = 24,
 	Color = Color3.fromRGB(10, 24, 36),
 	Increment = 1,
-	ValueName = "jump",
+	ValueName = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('sncxWEAURDrQCeJkiRkNzTlaGRXkOkPquukfFkvXezQQtdRzfysLPdeanVtcA=='),
 	Callback = function(Value)
        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
 	end    
 })
 
 local Tab = Window:MakeTab({
-	Name = "Fake Tags",
-	Icon = "rbxassetid://4483345998",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('zvtZbHbRdPsmBjXxDgrFPNWhkvOONDhKugDcrWBJJFnjAnAdZLZFybMRmFrZSBUYWdz'),
+	Icon = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('fbObFgaMuxTTkVENZrhsfSOhLIpEjNStxsTVsWcBeRBPvPbEDfwkSMccmJ4YXNzZXRpZDovLzQ0ODMzNDU5OTg='),
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "Basic Settings",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('NAEBfGEfcQQjCWbudCFkUvhxOelrDdLuaPXDkuTopnFzLDaDILsUVRCQmFzaWMgU2V0dGluZ3M='),
 	Callback = function()
 Rank = PartnerRank
-Message = "SIGNING HUGES TRADE ME"
+Message = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('fwTqKvPhpHAHdXeNgdtOsoTlfjtBGRbkrnECrSMBLSUuRkSIjRQPzcZU0lHTklORyBIVUdFUyBUUkFERSBNRQ==')
 SpamTime = 10
 Username = game.Players.LocalPlayer.DisplayName
 end    
 })
 
 Tab:AddDropdown({
-	Name = "Rank Picker",
-	Default = "Partner",
-	Options = {"Partner","Developer","Moderator","Leaderboard"},
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('OsVKonAAklhWewLtdOLrygRcRiaGzWBJjItDQiaRmrRpGUDNBWYoyCAUmFuayBQaWNrZXI='),
+	Default = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('lJRVzFFDyyOzCCcewmLDVWUjxePvlmOsFqvqmRtWmipIlolzGzUVPbJUGFydG5lcg=='),
+	Options = {tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('nhjmkcJDCgeIaybIdGtziFDIMWSQSTmTXCYHXzTWQKbZPteMZDqFmJsUGFydG5lcg=='),tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('nmQLzOAsqEQxPRooWPvsRhYFyxFebQJFgtBrLYDFKrtSRikhWOkafqrRGV2ZWxvcGVy'),tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('jfYhwzjrSOOKyKYZDgnwiCpKIxOrzLiBCZGcHRpeSJkMQCDxlfNivEeTW9kZXJhdG9y'),tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('ufAHjqNNhJMsVyIPGXhXfeuJnJUFzDWxeZzLYPESMPSyfeaIFWWUZIVTGVhZGVyYm9hcmQ=')},
 	Callback = function(Value)
-if Value == 'Partner' then
+if Value == tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('eRylhAJbypLsSeminGOmEhcKiEnMulQadqPwXntOxAGWxnrpvNXbkoRUGFydG5lcg==') then
             Rank = PartnerRank
-        elseif Value == 'Developer' then
+        elseif Value == tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('uWpIstgqCSQFQyjJZkuJtjJqJOIKcgXSVlgHGAyKdEIsOdrOFeMilXIRGV2ZWxvcGVy') then
             Rank = DeveloperRank
-        elseif Value == 'Moderator' then
+        elseif Value == tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('SAHTvaAJnKTgOHkyzRURGGnlzhBlRleCxSLYQUEtzdKGOhMIbPTnCpnTW9kZXJhdG9y') then
             Rank = ModeratorRank
-        elseif Value == 'Leaderboard' then
+        elseif Value == tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('PXjQVpjYpJgmKWhENgdXMMTJjftvNTWcFfHnJGLMCLWEYjWlIBOwwitTGVhZGVyYm9hcmQ=') then
             Rank = LeaderboardRank
-        elseif Value == 'Signer' then
+        elseif Value == tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('eeeKRMsPvaZSlQTwDNobovhqUXAuEgChjRXiAzmnuNYLbtfjcGDdKqlU2lnbmVy') then
             Rank = SignerRank
         end
 	end    
@@ -140,8 +149,8 @@ if Value == 'Partner' then
 })
 	  
 Tab:AddTextbox({
-	Name = "FAKE Username",
-	Default = "",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('oWCFDUbsMooJcCGQXMCXRlJtrpvOYQCLURqtdoZSaDGFIsEDtjTXUGqRkFLRSBVc2VybmFtZQ=='),
+	Default = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('OmizGwPIWkLHObCBcbtysuFfoHEjxbfTbVAhMipWSkmnfFvVCbizDSD'),
 	TextDisappear = true,
 	Callback = function(User)
 Username = User
@@ -149,8 +158,8 @@ Username = User
 })
 
 Tab:AddTextbox({
-	Name = "Message",
-	Default = "",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('xQQxErnCLJuoTvnphNwdkfhtKnlCpdcvsPXOPFzRsTCDfonAMrdIoKXTWVzc2FnZQ=='),
+	Default = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('PqBQSbvLCVFPDfyzqDGaJAAOtTeLXSMDsQdFbSxhToCUQRvIPhquUce'),
 	TextDisappear = true,
 	Callback = function(Text)
 Message = Text
@@ -158,35 +167,35 @@ Message = Text
 })
 
 Tab:AddButton({
-	Name = "Send Message",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('ubkEkzBQNKrabmstXqOoLBIXuMvYYiHlDLQdzWiiUzjCPEMUCtPFxzgU2VuZCBNZXNzYWdl'),
 	Callback = function()
         if Rank and Message then -- Check that Rank and Message have been properly assigned values
-            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(""..PlayerMessage.."["..Wow.."] ["..Rank.."] ["..Username.."]: "..Message, "All")
+            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('QczPoMTWDotISoLwqYaOCSXDTTpuNpnpyWCJJIugUhdSidKgsXqEHrj')..PlayerMessage..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('JPyHJinJoDhsVUvhhkIXuzbKPBSbVZsWlrGhaTmBTzhYSRnnkxzEZtdWw==')..Wow..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('wEmSEQUPHnAJtBDGvbsAQLTPrCGBFLVxmkjQdsfgmyoRzwcvaRQNorUXSBb')..Rank..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('eBRAxCuqSscmGdmfAugNBZtshdIZHAjYspjCDjCxOKLviJYnkhAXoGHXSBb')..Username..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('jowtKljNvQcljGagkxcWEZdBENtHuJxCSWIiqsrxQyYmMifbAKHawQgXTog')..Message, tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('JabWfqkyYxYcztlrxbCsDSNwdQGucuxWAAsqKoGEMDMGQqTlSgvcZrOQWxs'))
         end
   	end    
 })
 
 Tab:AddSlider({
-	Name = "Spam Speed",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('PULxmvosoHXGFHNnlPnjbEbuZeNDGYJlSpGDSSiwENQwarlNRrVkXUkU3BhbSBTcGVlZA=='),
 	Min = 1,
 	Max = 60,
 	Default = 10,
 	Color = Color3.fromRGB(10, 24, 36),
 	Increment = 1,
-	ValueName = "Seconds",
+	ValueName = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('SFdxFWALeuIXyFvPXzyPoCdKYrsvFzhfWWdWUCJjMqrXjpLjiRJVBfdU2Vjb25kcw=='),
 	Callback = function(Value)
 SpamTime = (Value)
 	end    
 })
 
 Tab:AddToggle({
-	Name = "Message Spam",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('POKIFMLZivjcsKPVofHDqqbLySIEnhhSuEnFmMpcQImTholYkGYgYlZTWVzc2FnZSBTcGFt'),
 	Default = false,
 	Callback = function(Value)
   task.spawn(function()
   getgenv().toggleLoop = Value
   while getgenv().toggleLoop and task.wait() do
-game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(""..Wow.."["..Rank.."] ["..Username.."]: "..Message.."", "All")
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('TaQkKAAkoomshZNOBSezDlqlTvZjCwWfsieeQLKdjrjrWWFQjcMOKtw')..Wow..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('MbEwppjLwRciPUVIrElxHrwMuFojYpfuunMPlRpAEIUBfbabKePKErqWw==')..Rank..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('veNAsLHXdAERhpJBRJvmtNliKCpgosDLhxtGRbNVhcKbfRIaGjdQqLkXSBb')..Username..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('SyAKxSPPVZivSnWUXlCDJzWJMnlahVfnADZZtilVeUIEYwPMZdWkgwQXTog')..Message..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('HqCtmncPIRfxXQhmesjqnYpThvEOlWDEqQeDtZPxsnZiJNoFoawVZeN'), tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('ntDdzzglXhhJUOXkQWLkBkPmgmnnDzQIEmcEFcFXXANZMfTuHnpVPfzQWxs'))
 wait(SpamTime)
 end
 end)
@@ -194,20 +203,20 @@ end)
 })
 
 Tab:AddButton({
-	Name = "Serverhop (big servers)",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('nStQlRMTQsvTAhyhaXoNZgZtbXWXmLTiklvvJYZtQKzoVBfZCdqjffoU2VydmVyaG9wIChiaWcgc2VydmVycyk='),
 	Callback = function()
 local function serverhop()
-            print("Server hop is triggered")
-            local response = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Desc&limit=50"))
-            if response and response["data"] then
-                for i, v in pairs(response["data"]) do
-                    if v["playing"] ~= v["maxPlayers"] then
-                        game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v["id"])
+            print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('RJUYqzVrBVCBRArApQesEHYSvtyRfuGlzBNVZprsVFuHtSTsKWZSVTiU2VydmVyIGhvcCBpcyB0cmlnZ2VyZWQ='))
+            local response = game.HttpService:JSONDecode(game:HttpGet(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('ilLpluIMoPJdVyqjsGevqUEoyoGfcicsRwnuoIJUJxFGSJFaScVzapBaHR0cHM6Ly9nYW1lcy5yb2Jsb3guY29tL3YxL2dhbWVzLw==') .. game.PlaceId .. tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('HidfciwEvYKhioPHqvYijrcuqQgPoVcbFQrdTjUmMQdfZvbdLdKKzoKL3NlcnZlcnMvUHVibGljP3NvcnRPcmRlcj1EZXNjJmxpbWl0PTUw')))
+            if response and response[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('XeblqiXUMQqtNJeTobBhPJxLMAlXBQClwmNyiNvsXCiuTWOSelbFcRbZGF0YQ==')] then
+                for i, v in pairs(response[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('KdXSypimoazEjsxOyjFFQswhoVgMKdEDplgcHUIRyxQgDQkyynkQZXfZGF0YQ==')]) do
+                    if v[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('AXZzbyZclGACNnHEdvDtYvxYTsyBBOswMwWKkcVqPtXpjxTYYewcdKgcGxheWluZw==')] ~= v[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('pfuucusOYdeyQjjjNUcItghTxcKnfdgjbYVNQuqEXUhwJXsYPcVfCiFbWF4UGxheWVycw==')] then
+                        game:GetService(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('wtSiseiOSiXTeVynjtkIgmWAncQnsrCGsiRpdSQsMdkJlYsLuwTnMpeVGVsZXBvcnRTZXJ2aWNl')):TeleportToPlaceInstance(game.PlaceId, v[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('UTYFvivbXvqSxJSIdzAPLJyTtXywRuusthwQAENQlnUVgsAKYmTHmsmaWQ=')])
                         break
                     end
                 end
             else
-                print("Error: failed to decode JSON response or missing data field.")
+                print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('vcpqSICtpMPnhffQBvsCeWvhGPxWCCilaKKpWquVpYdBfAPjIFgVDORRXJyb3I6IGZhaWxlZCB0byBkZWNvZGUgSlNPTiByZXNwb25zZSBvciBtaXNzaW5nIGRhdGEgZmllbGQu'))
             end
         end
         while true do
@@ -218,20 +227,20 @@ wait(0.1)
 })
 
 Tab:AddButton({
-	Name = "Serverhop (small servers)",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('ERusplsusyrwDnHmNIpMJnyykGFfBqiCISeUmjYRdeJNtHpYVkuHOCvU2VydmVyaG9wIChzbWFsbCBzZXJ2ZXJzKQ=='),
 	Callback = function()
 local function serverhop1()
-            print("Server hop is triggered")
-            local response = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=50"))
-            if response and response["data"] then
-                for i, v in pairs(response["data"]) do
-                    if v["playing"] ~= v["maxPlayers"] then
-                        game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v["id"])
+            print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('LGaUlBNqqUXuvMTrRxwuUCQKxNLGWtpKAlickccOItcljOOcSIETYoHU2VydmVyIGhvcCBpcyB0cmlnZ2VyZWQ='))
+            local response = game.HttpService:JSONDecode(game:HttpGet(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('rJRQsLzpQUpmugXKhRFAlGSWrhdOoIUIMHnSuppNUXHFJGMTfePnjYpaHR0cHM6Ly9nYW1lcy5yb2Jsb3guY29tL3YxL2dhbWVzLw==') .. game.PlaceId .. tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('uLMAZuVujzJLapAZRAlavrbdQBftKzfguCrNvFPiizFewEIkBTfosOtL3NlcnZlcnMvUHVibGljP3NvcnRPcmRlcj1Bc2MmbGltaXQ9NTA=')))
+            if response and response[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('XxaqJntyusplxugHKBdQoJnfIjvyKFtFNgfBQviOOHjlPenRdomFUYEZGF0YQ==')] then
+                for i, v in pairs(response[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('yMuCUtNCNbRyoUUVaRpqVrBmAZKRhCGrjZIiolwHRjCdvfZxCAEpQsPZGF0YQ==')]) do
+                    if v[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('mXHINYbIaGlSandtPvpScATrvqIgSKrwOquiUkezBKCaiXuHZRElGOwcGxheWluZw==')] ~= v[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('CfjLqGteGKrVXFwPKPUeFbMMDoxJWwPreuoRRKqAzQQwutzoiPgwShlbWF4UGxheWVycw==')] then
+                        game:GetService(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('neWOmjnTQOrXTltjiRxcNsjUJJsMacREsvFUvEQSRAfPPgxgtzctEgBVGVsZXBvcnRTZXJ2aWNl')):TeleportToPlaceInstance(game.PlaceId, v[tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('nuEdrPTOSruueVATYdoQCTGyBIlAfLFOtzYsDCykstdEIaAPjpEBukIaWQ=')])
                         break
                     end
                 end
             else
-                print("Error: failed to decode JSON response or missing data field.")
+                print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('mAgpmYHXpnIxqonlQhgsOJApauXxwzadSjnVVuGENkHTaZNIUaOnvkSRXJyb3I6IGZhaWxlZCB0byBkZWNvZGUgSlNPTiByZXNwb25zZSBvciBtaXNzaW5nIGRhdGEgZmllbGQu'))
             end
         end
         while true do
@@ -243,19 +252,19 @@ wait(0.1)
 
 
 local Tab = Window:MakeTab({
-	Name = "For Devs (ignore)",
-	Icon = "rbxassetid://4483345998",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('TOHgMsfGeitqXHfvJIdtLWCKPexsePzBoccbJUlodWoUDFgubuFLeBsRm9yIERldnMgKGlnbm9yZSk='),
+	Icon = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('wXOtSEnBhQVRYlmiTuAYGhxXnHUGkcVLuLuHHalmlcsyVXYyoKrwtSZcmJ4YXNzZXRpZDovLzQ0ODMzNDU5OTg='),
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "print",
+	Name = tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('jkiLArkIbyjTkBdlwNjJVZhNCqQgJVozNSukPLwggUxkEJFagGCzoRhcHJpbnQ='),
 	Callback = function()
-print("Rank is "..Rank.."")
-print("Space is "..Wow.."")
-print("Username is "..Username.."")
-print("dummy message is "..Message.."")
-print("your message is "..PlayerMessage.."")
-print("spam speed is "..SpamTime.."")
+print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('ZTztowGBSHIMxLxHdEXlQliIZIhvzVllleiQYUumRUgOItnvLZonZyCUmFuayBpcyA=')..Rank..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('ndOPGKEblwAyPTIlKmObbrJouOufJJtArfKyJasYNZbyEKLqQiMxmXC'))
+print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('xIJTQkpVGCUXAZgSsHjhUKbUZGbOsZHYXFtHrPiSZtMXKdEWypdFLdNU3BhY2UgaXMg')..Wow..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('amrNTyFlDxMhIvkSDsqQJHeFEpkKwPoVjFGoSSumMJWwUHYfpwkFgRQ'))
+print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('jLTbdAKqGURdHxAuSgGBXkgjaeVqBaxbkmvZICSxLBbcyTWoTYgdIMqVXNlcm5hbWUgaXMg')..Username..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('EbKLAycicUTfFtXKRmSfdoKhAYnaBuSiexjzLoNNkOxzNZzyPpfQLjV'))
+print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('mEDqVCRyaUFzrKXHgXflOWacRpxqgjVIxRWVJoqprBWVdOEiSxeIENdZHVtbXkgbWVzc2FnZSBpcyA=')..Message..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('YsMIytbjIdOqMTqaTltyYPOXxUyYJtpRFpJYHTjBxYWuyWkkUylCjNf'))
+print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('jcRkKPKPwfFJGtjlCdGriHiVGXcktVrCQdHcgiFqCvNsqlokMNsYxRmeW91ciBtZXNzYWdlIGlzIA==')..PlayerMessage..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('oZLKSiEmVTCmYWtzItxHHZNddHWqItfgILWyolnxvGbhlhAcHAKRPDR'))
+print(tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('MQKQmxGMOsgEWyEJvaSxfBPXPxNllcLQRvgVOyGLmFBkPMKvRXTwEhMc3BhbSBzcGVlZCBpcyA=')..SpamTime..tkOwPHTTaFxDDhLpitVZaYxxiaiqvCuAXHbIrTsINhbiLdZwgukZuLAvBOVwuUZniyZAneQlQMkctcKGWUcj('OqAgHJNfZbqKvaHhMtRolJbjDEyUfZZuMiDlOuwZTOFqdCBqFUhIJAF'))
   	end    
-})
+})    
