@@ -214,7 +214,7 @@ local data1
 
 -- Loading Screen
 if _G.LoadingScreen ~= true then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/StickOgh01/LoadingScreen/main/LoadingScreen'))() --
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/StickOgh01/Testicle/main/LoadingScreen'))() --
 end
 
 -- Remotes
