@@ -1,10 +1,10 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/LypherX/FTagSource/main/MoriScripts')))()
 -- IMPORTANT LOCAL
-local PartnerRank = "ðŸ”¥Partner"
-local DeveloperRank = "âš’ï¸Developer"
-local ModeratorRank = "ðŸ”§Moderator"
-local LeaderboardRank = "ðŸŒ#82"
-local SignerRank = "âœï¸Signer"
+local PartnerRank = "🔥Partner"
+local DeveloperRank = "⚒️Developer"
+local ModeratorRank = "🔧Moderator"
+local LeaderboardRank = "🌍#82"
+local SignerRank = "✏️Signer"
 local Wow = "OMG REAL HE SIGN MY HUGES!                                                                                                                                     "
 local speed = (game.Players.LocalPlayer.Character.Humanoid.WalkSpeed)
 local jump = (game.Players.LocalPlayer.Character.Humanoid.JumpPower)
