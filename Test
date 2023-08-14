@@ -1,4 +1,5 @@
-local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/BroWhats/Rayfield/main/privatesource",true))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/LypherX/FTagSource/main/MoriScripts')))()
+-- IMPORTANT LOCAL
 local PartnerRank = "ðŸ”¥Partner"
 local DeveloperRank = "âš’ï¸Developer"
 local ModeratorRank = "ðŸ”§Moderator"
