@@ -11,7 +11,7 @@ local jump = (game.Players.LocalPlayer.Character.Humanoid.JumpPower)
 Username = game.Players.LocalPlayer.DisplayName
 SpamTime = 10
 -- SCRIPT
-local Window = OrionLib:MakeWindow({Name = "FuegoEterno Fake Tag", HidePremium = false, SaveConfig = true, ConfigFolder = "Mori Scripts"})
+local Window = OrionLib:MakeWindow({Name = "FuegoEterno Fake Tag", HidePremium = false, SaveConfig = true, ConfigFolder = "FuegoEterno Scripts"})
 
 local Tab = Window:MakeTab({
 	Name = "Misc Scripts",
